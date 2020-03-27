@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.body {
+    background-color: #282a36;
+}
+
+.sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    width: 780px;
+    height: 410px;
+    background: rgba(0, 0, 0, 0.972);
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100%;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    flex-wrap: wrap;
+} 
+
+.left {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left, .right {
+    height: 350px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.div1 {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    padding-left: 30px;
+    margin: 7px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18pt;
+    font-weight: 300;
+    padding-left: 5px 0 0 5px;
+    font-family: "Teko", -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    list-style: none;  
+}
+
+form {
+    margin: 20px 0;
+    font-family: "Teko", sans-serif;
+    font-weight: bold;
+}
+
+form .l1 {
+    display: block;
+    font-size: 30px;
+    color: #282a36;
+    margin: 0 0 -13px 0;
+
+}
+
+form .l2 {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sem {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+   /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+    .flex {
+        height: 600px;
+        margin: 25px;
+    }
+
+    .left {
+        height: 190px;
+        
+    }
+
+    img {
+        padding-left: 20px;
+    }
+
+    form .l1 {
+        font-size: 25px;
+    }
+
+    form .l2 {
+        font-size: 35px;
+    }
+   }
+
+   /* Tablet Styles */
+   @media only screen and (min-width: 401px) and (max-width: 680px) {
+     .flex {
+         margin: 25px;
+         display: block;
+         height: 600px;
+         
+     }
+
+     .left {
+         height: 200px;
+     }
+
+     form .l1 {
+         font-size: 30px;
+     }
+
+     form .l2 {
+         font-size: 40px;
+     }
+
+   }
+
+   /* Desktop Styles */
+   @media only screen and (min-width: 681px) {
+     .flex {
+         margin: 70px 25px 25px 25px;
+     }
+   }
+/*  COLORS  */
+form .l1, .p3 {
+    color: #a200ff;
+}
+.right {
+    background: #8512bb;
+}
+
+
